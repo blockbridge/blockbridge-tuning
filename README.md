@@ -128,7 +128,7 @@ To make this change persistent, add the `echo noop` lines to `/etc/rc.local`.
 The Blockbridge storage controller allocates the bulk of your system's
 RAM to use for metadata and data caching.  It attempts to allocate the
 memory in large chunks, called "huge pages" if it can, falling back to
-the conventional 4 KiB page size when the supply of hyge pages is
+the conventional 4 KiB page size when the supply of huge pages is
 exhausted.  It's much more efficient for the system to track this
 memory in 1 GiB or 2 MiB chunks instead of many small 4 KiB pages.  We
 recommend that you reserve at least half of your system's RAM in huge
