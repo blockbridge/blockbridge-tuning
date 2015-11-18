@@ -164,9 +164,9 @@ If not enough memory was available due to system memory limits or memory
 fragmentation, then `cat nr_hugepages` will show less than 512.
 
 To make this setting persistent across reboot, edit `/etc/sysctl.conf` and add
-the setting there:
+the following line:
 
-    kernel.mm.hugepages.hugepages-2048kb/nr_hugepages = 512
+    vm.nr_hugepages = 512
 
 To view the current reservation and usage of hugepages in the system, use the
 legacy proc interface:
